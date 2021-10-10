@@ -1,0 +1,24 @@
+{
+  "name": "build-plugin-rax-stylus",
+  "version": "1.0.0",
+  "description": "Better to define externals in vite2. It not only work on our source code, but also work on pre-bundling dependencies well.",
+  "main": "index.js",
+  "scripts": {
+    "release": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/rax-plugins.git",
+    "directory": "packages/build-plugin-rax-stylus"
+  },
+  "keywords": [
+    "build-plugin",
+    "build-plugin-rax-stylus"
+  ],
+  "author": "Jesse Feng <fxm0016@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/rax-plugins/issues"
+  },
+  "homepage": "https://github.com/fengxinming/rax-plugins#readme"
+}
