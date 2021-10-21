@@ -82,10 +82,15 @@ function configure(config, loaderOptions) {
   setCSSRule(config, false, loaderOptions);
 }
 
-function plugin(api, opts) {
-  const { onGetWebpackConfig } = api;
+function plugin({ registerUserConfig, onGetWebpackConfig, context }) {
+  registerUserConfig({
+    name: 'stylusLoaderOptions',
+    validation(value) {
+      return typeof value === 'object';
+    },
+  });
   onGetWebpackConfig((config) => {
-    configure(config, opts);
+    configure(config, context.userConfig.stylusLoaderOptions);
   });
 }
 
